@@ -72,5 +72,13 @@ console.log(`Resultado: ${sumaTotal}`);
 for (let j = 0; j < columnas; j++) {
     for (let i = 0; i < filas; i++) {
         console.log(matriz[i][j]); 
+        
+        
+console.log("----- Intercambiando primera fila por la última -----");
+
+// JavaScript permite desempaquetar valores directamente de la matriz para swappearlos
+[matriz[0], matriz[matriz.length - 1]] = [matriz[matriz.length - 1], matriz[0]];
+
+console.table(matriz);
     }
 }
