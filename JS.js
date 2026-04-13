@@ -63,3 +63,14 @@ console.table(matriz);
 const sumaTotal = matriz.reduce((acumulado, fila) => {
     return acumulado + fila.reduce((a, b) => a + b, 0);
 }, 0);
+
+console.log(`-- SUMA TOTAL --`);
+console.log(`Resultado: ${sumaTotal}`);
+
+
+// recorremos por columna
+for (let j = 0; j < columnas; j++) {
+    for (let i = 0; i < filas; i++) {
+        console.log(matriz[i][j]); 
+    }
+}
