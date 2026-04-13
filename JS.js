@@ -59,3 +59,7 @@ let matriz = Array.from({ length: filas }, () =>
 // Imprimir con estilo de tabla real
 console.table(matriz);
 
+//Sumamos cada fila y luego sumamos los resultados de esas filas.
+const sumaTotal = matriz.reduce((acumulado, fila) => {
+    return acumulado + fila.reduce((a, b) => a + b, 0);
+}, 0);
