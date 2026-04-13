@@ -2,6 +2,7 @@
 // Función auxiliar para imitar a random.randint(min, max)
 const randint = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
+/*
 // Declaramos el arreglo vacío con 10 espacios
 let enteros = new Array(10).fill(0);
 
@@ -43,4 +44,15 @@ if (posicion !== -1) {
     console.log(`El valor ${numeroBuscar} no fue encontrado`);
 }
 
+*/
+
+console.log("\n --------Ahora se trabajara con matrices --------");
+
+let filas = 3;
+let columnas = 3;
+
+// En lugar de for anidado, usamos Array.from.
+let matriz = Array.from({ length: filas }, () => 
+    Array.from({ length: columnas }, () => Math.floor(Math.random() * 9) + 1)
+);
 
