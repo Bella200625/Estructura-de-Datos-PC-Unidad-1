@@ -11,3 +11,10 @@ for (let i = 0; i < 10; i++) {
     enteros[i] = randint(1, 100);
 }
 
+console.log("------------ Arreglo de enteros ------------");
+for (let i = 0; i < enteros.length; i++) {
+    
+    console.log(`Valor encontrado: ${enteros[i]}`);
+}
+
+
