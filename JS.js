@@ -56,3 +56,6 @@ let matriz = Array.from({ length: filas }, () =>
     Array.from({ length: columnas }, () => Math.floor(Math.random() * 9) + 1)
 );
 
+// Imprimir con estilo de tabla real
+console.table(matriz);
+
