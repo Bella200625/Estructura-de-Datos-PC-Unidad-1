@@ -23,3 +23,11 @@ for (let i = 0; i < enteros.length; i++) {
     enteros[i] *= i;
 }
 enteros.forEach(valor => console.log(`- ${valor}`));
+
+console.log("------- Cambiamos los impares por cero -------");
+for (let i = 0; i < 10; i++) {
+    if (enteros[i] % 2 !== 0) {
+        enteros[i] = 0;
+    }
+    console.log(`Posición ${i} llenada con: ${enteros[i]}`);
+}
