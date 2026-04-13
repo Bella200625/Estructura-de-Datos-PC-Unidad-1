@@ -18,3 +18,8 @@ for (let i = 0; i < enteros.length; i++) {
 }
 
 
+console.log("---Multiplicamos todos los valores por su indice---");
+for (let i = 0; i < enteros.length; i++) {
+    enteros[i] *= i;
+}
+enteros.forEach(valor => console.log(`- ${valor}`));
