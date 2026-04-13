@@ -5,3 +5,9 @@ const randint = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 // Declaramos el arreglo vacío con 10 espacios
 let enteros = new Array(10).fill(0);
 
+// Usamos un for para recorrer y rellenar con valores aleatorios cada posicion
+// for (inicio; condición; incremento)
+for (let i = 0; i < 10; i++) {
+    enteros[i] = randint(1, 100);
+}
+
