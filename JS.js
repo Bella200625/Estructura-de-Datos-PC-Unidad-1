@@ -31,3 +31,16 @@ for (let i = 0; i < 10; i++) {
     }
     console.log(`Posición ${i} llenada con: ${enteros[i]}`);
 }
+
+console.log("---------------- Busqueda lineal ----------------");
+let numeroBuscar = 10;
+
+let posicion = enteros.indexOf(numeroBuscar);
+
+if (posicion !== -1) {
+    console.log(`Encontrado en la posicion: ${posicion}`);
+} else {
+    console.log(`El valor ${numeroBuscar} no fue encontrado`);
+}
+
+
